@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TesteNps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# Angular-8-Template
+This Repository is for I'm learn more about angular 8 with Material Angular and stuff.
+>>>>>>> 5afc625e2eca526ca9cc03f3652405c30ddbbfe9
