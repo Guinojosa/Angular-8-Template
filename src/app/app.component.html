@@ -1,30 +1,7 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
-    </mat-drawer>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Angular 8 Test pipes and toasts</span>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-    <div class="toolbar" role="banner">
-          <mat-icon aria-hidden="false" aria-label="Example thumbs up SVG icon" (click)="drawer.toggle()">list</mat-icon>
-        <span>Nps Filter with Alert</span>
-        <div class="spacer"></div>
-      </div>
-
-      <div class="content" role="main">
-        <button class="" (click)="toast()">Teste Alert</button>
-
-        <div *ngFor="let i of array">
-          {{ i }}
-        </div>
-
-        <button class="" (click)="filterNps(7)">Filter NPS</button>
-      </div>
-
-      <router-outlet></router-outlet>
-
-
-  </mat-drawer-container>
-
+<router-outlet></router-outlet>

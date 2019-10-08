@@ -1,0 +1,21 @@
+<mat-card>
+    <div class="div-buttons">
+        <button mat-raised-button style="background-color: #ff5252" (click)="typeNps = 1">Detractors</button>
+        <button mat-raised-button style="background-color: #ffba57" (click)="typeNps = 2">Neutrals</button>
+        <button mat-raised-button style="background-color: #9ccc65" (click)="typeNps = 3">Promoters</button>
+        <button mat-raised-button color="primary" (click)="typeNps = 4">All NPS</button>
+    </div>
+    <br />
+    <mat-grid-list [cols]="breakpoint" rowHeight="100px">
+      <mat-grid-tile
+        *ngFor="let i of array | filterNps : typeNps"
+        [colspan]="1" [rowspan]="2" (window:resize)="onResize($event)"
+        [ngStyle]="{'background-color': ((i >= 0 && i  <= 6 ) ? '#ff5252' : (i  >= 7 && i  <= 8 ) ? '#ffba57' : '#9ccc65' )}">
+        <mat-card>
+        <h2>NPS Value: {{ i }}</h2>
+        <br />
+        <button mat-raised-button (click)="showToast(i)">What kind of feedback?</button>
+      </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
