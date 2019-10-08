@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TesteNps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
@@ -29,4 +28,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # Angular-8-Template
 This Repository is for I'm learn more about angular 8 with Material Angular and stuff.
->>>>>>> 5afc625e2eca526ca9cc03f3652405c30ddbbfe9
