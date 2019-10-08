@@ -1,4 +1,4 @@
-import { ToastService } from './../../Shared/toast.service';
+import { ToastService } from '../../Shared/Auxiliary Service/toast.service';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
