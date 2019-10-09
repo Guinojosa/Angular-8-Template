@@ -37,7 +37,7 @@ export class FeedbacksComponent implements OnInit {
       return Math.floor(Math.random() * (10 - 0) + 0);
     });
     this.detractor = this.array.filter(x => x < 8).length;
-    this.neutrals = this.array.filter(x => x > 7 && x < 9).length;
+    this.neutrals = this.array.filter(x => x > 6 && x < 9).length;
     this.promoters = this.array.filter(x => x > 8).length;
   }
 }
