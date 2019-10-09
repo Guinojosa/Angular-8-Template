@@ -1,3 +1,4 @@
+import { PrincipalComponent } from './Components/principal/principal.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -5,8 +6,8 @@ const routes: Routes = [
   {
     path: ``,
     loadChildren: () =>
-      import(`./Components/feedbacks/feedbacks.module`).then(
-        m => m.FeedbacksModule
+      import(`./Components/principal/principal.module`).then(
+        m => m.PrincipalModule
       )
   }
 ];
