@@ -4,11 +4,14 @@
         <button mat-raised-button style="background-color: #ffba57" (click)="typeNps = 2">Neutrals</button>
         <button mat-raised-button style="background-color: #9ccc65" (click)="typeNps = 3">Promoters</button>
         <button mat-raised-button color="primary" (click)="typeNps = 4">All NPS</button>
+        <button mat-raised-button color="primary" (click)="randomNumbers()">Update Numbers</button>
     </div>
     <br />
     <mat-grid-list [cols]="breakpoint" rowHeight="100px">
-      <mat-grid-tile
-        *ngFor="let i of array | filterNps : typeNps"
+      <mat-grid-tile *ngIf="array.length == 0" [colspan]="3" [rowspan]="2">
+        <h2>Not Contain this type</h2>
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let i of array | filterNps : typeNps"
         [colspan]="1" [rowspan]="2" (window:resize)="onResize($event)"
         [ngStyle]="{'background-color': ((i >= 0 && i  <= 6 ) ? '#ff5252' : (i  >= 7 && i  <= 8 ) ? '#ffba57' : '#9ccc65' )}">
         <mat-card>
