@@ -5,25 +5,31 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav #sidenav [mode]="'over'" style="width: 250px; height: 100%;border-style: outset;">
-      <mat-accordion multi="true">
-        <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" style="background: grey">
-          <mat-expansion-panel-header >
-            <mat-panel-title>
-              Personal data
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          Teste
-        </mat-expansion-panel>
-        <mat-expansion-panel class="mat-elevation-z0" [expanded]="true">
-          <mat-expansion-panel-header style="background: grey">
-            <mat-panel-title>
-              Self aware panel
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
-        </mat-expansion-panel>
-      </mat-accordion>
+  <mat-sidenav
+    #sidenav
+    [mode]="'over'"
+    style="width: 250px; height: 100%;border-style: outset;">
+    <div style="text-align: center;">
+      <h3>Welcome To My Test</h3>
+    </div>
+    <mat-accordion multi="true">
+      <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" style="background: #bcc0c7;color: #fff">
+        <mat-expansion-panel-header style="background: #7d8492;color: #fff">
+          <mat-panel-title style="color: #fff">
+            Personal data
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Teste</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" style="background: #bcc0c7;color: #fff">
+        <mat-expansion-panel-header style="background: #7d8492;color: #fff">
+          <mat-panel-title style="color: #fff">
+            Self aware panel
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
   </mat-sidenav>
 
   <mat-sidenav-content>
