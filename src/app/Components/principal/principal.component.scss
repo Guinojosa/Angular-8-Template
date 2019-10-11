@@ -1,7 +1,23 @@
-.mat-expansion-panel-spacing{
+.mat-expansion-panel-spacing {
   margin: 2px 0px;
 }
+
 .header-toolbar {
   position: fixed;
   z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  border-style: outset;
 }

@@ -7,27 +7,47 @@
 <mat-sidenav-container>
   <mat-sidenav
     #sidenav
+    class="menu"
     [mode]="'over'"
-    style="width: 250px; height: 100%;border-style: outset;">
+    style="width: 250px; height: 100%;border-style: outset;"
+  >
     <div style="text-align: center;">
       <h3>Welcome To My Test</h3>
     </div>
     <mat-accordion multi="true">
-      <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" style="background: #bcc0c7;color: #fff">
+      <mat-expansion-panel
+        class="mat-elevation-z0"
+        [expanded]="true"
+        style="background: #bcc0c7;color: #fff;">
         <mat-expansion-panel-header style="background: #7d8492;color: #fff">
           <mat-panel-title style="color: #fff">
             Personal data
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <p>Teste</p>
+        <nav>
+          <ul>
+              <li><a [routerLink]="['']">Home</a></li>
+              <li><a [routerLink]="['']">Feedback</a></li>
+              <li><a [routerLink]="['']">Pipes and Others</a></li>
+          </ul>
+        </nav>
       </mat-expansion-panel>
-      <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" style="background: #bcc0c7;color: #fff">
+      <mat-expansion-panel
+        class="mat-elevation-z0"
+        [expanded]="true"
+        style="background: #bcc0c7;color: #fff">
         <mat-expansion-panel-header style="background: #7d8492;color: #fff">
           <mat-panel-title style="color: #fff">
             Self aware panel
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <p>Test</p>
+        <nav>
+            <ul>
+                <li><a [routerLink]="['']">Test 1</a></li>
+                <li><a [routerLink]="['']">Test 2</a></li>
+                <li><a [routerLink]="['']">Test 3</a></li>
+            </ul>
+          </nav>
       </mat-expansion-panel>
     </mat-accordion>
   </mat-sidenav>
