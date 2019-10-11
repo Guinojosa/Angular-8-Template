@@ -6,3 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-expansion-panel-content > .mat-expansion-panel-body {
   padding: 0 !important;
 }
+
+md-sidenav-layout > md-content {
+  display: flex !important; flex-direction: column !important;
+}

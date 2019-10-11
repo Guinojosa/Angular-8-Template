@@ -8,12 +8,8 @@
   <mat-sidenav
     #sidenav
     class="menu"
-    [mode]="'over'"
-    style="width: 250px; height: 100%;border-style: outset;"
-  >
-    <div style="text-align: center;">
-      <h3>Welcome To My Test</h3>
-    </div>
+    [mode]="'side'"
+    style="width: 250px; height: 100%;border-style: outset; background-color: #d1d1d1;" opened>
     <mat-accordion multi="true">
       <mat-expansion-panel
         class="mat-elevation-z0"
@@ -21,7 +17,7 @@
         style="background: #bcc0c7;color: #fff;">
         <mat-expansion-panel-header style="background: #7d8492;color: #fff">
           <mat-panel-title style="color: #fff">
-            Personal data
+            Home
           </mat-panel-title>
         </mat-expansion-panel-header>
         <nav>
@@ -38,7 +34,7 @@
         style="background: #bcc0c7;color: #fff">
         <mat-expansion-panel-header style="background: #7d8492;color: #fff">
           <mat-panel-title style="color: #fff">
-            Self aware panel
+            Second Menu only to.. nothing :P
           </mat-panel-title>
         </mat-expansion-panel-header>
         <nav>
@@ -50,6 +46,9 @@
           </nav>
       </mat-expansion-panel>
     </mat-accordion>
+    <div style="text-align: center;">
+      V - 1.0
+    </div>
   </mat-sidenav>
 
   <mat-sidenav-content>

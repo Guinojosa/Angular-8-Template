@@ -14,6 +14,7 @@ export class FeedbacksComponent implements OnInit {
   detractor: number;
   neutrals: number;
   promoters: number;
+  all: number;
   // tslint:disable-next-line: variable-name
   constructor(private _toast: ToastService) {
     this.randomNumbers();
@@ -33,11 +34,12 @@ export class FeedbacksComponent implements OnInit {
   }
 
   randomNumbers() {
-    this.array = Array.from({length: 12}).map(i => {
+    this.array = Array.from({length: 50}).map(i => {
       return Math.floor(Math.random() * (10 - 0) + 0);
     });
     this.detractor = this.array.filter(x => x < 8).length;
     this.neutrals = this.array.filter(x => x > 6 && x < 9).length;
     this.promoters = this.array.filter(x => x > 8).length;
+    this.all = this.array.length;
   }
 }
